@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RememberMe.MasterInfo.Wellcome" >
+    <NavigationPage.TitleView>
+        <Button Text="LogOut" TextColor="White" FontAttributes="Bold" FontSize="15" x:Name="logoff" Clicked="logoff_Clicked" 
+                HorizontalOptions="End" BackgroundColor="#2894f4"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+
+
+        <Grid BackgroundColor="#E5EBEE">
+            <MediaElement Source="ms-appx:///darkplanet.mp4" ShowsPlaybackControls="False"
+                      IsLooping="True" Aspect="AspectFill" AutoPlay="True"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <BoxView Opacity="0.3" BackgroundColor="#00C2FF"/>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Welcome" TextColor="White" FontSize="40" FontAttributes="Bold"/>
+
+                <Label x:Name="user" TextColor="White" FontSize="25"/>
+
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

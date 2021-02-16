@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RememberMe.MasterInfo.DeviceInformation" Title="Device Information">
+    <NavigationPage.TitleView>
+        <Button Text="LogOut" TextColor="White" FontAttributes="Bold" FontSize="15" x:Name="logoff" Clicked="logoff_Clicked" 
+                HorizontalOptions="End" BackgroundColor="#2894f4"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+
+
+        <Grid BackgroundColor="#E5EBEE">
+            <MediaElement Source="ms-appx:///darkplanet.mp4" ShowsPlaybackControls="False"
+                                  IsLooping="True" Aspect="AspectFill" AutoPlay="True"
+                                  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            </MediaElement>
+            
+            <BoxView Opacity="0.3" BackgroundColor="#00C2FF"/>
+
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Your Device Information is" FontSize="30" FontAttributes="Bold" TextColor="White"></Label>
+                <Label x:Name="Info"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+                <Label x:Name="Info1"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+                <Label x:Name="Info2"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+                <Label x:Name="Info3"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+                <Label x:Name="Info4"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+                <Label x:Name="Info5"
+                   TextColor="white" FontAttributes="Bold" FontSize="20"/>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+
+    <!--<relativelayout>
+        <image source="planet.jpg" opacity="0.9" aspect="aspectfit"
+                relativelayout.widthconstraint=
+                  "{constraintexpression type=relativetoparent, property=width}"
+                relativelayout.heightconstraint=
+                  "{constraintexpression type=relativetoparent, property=height}"/>
+        <grid relativelayout.widthconstraint=
+              "{constraintexpression type=relativetoparent, property=width}"
+            relativelayout.heightconstraint=
+              "{constraintexpression type=relativetoparent, property=height}">
+            <stacklayout verticaloptions="centerandexpand" horizontaloptions="centerandexpand">
+                <label text="your device information is" fontsize="20" fontattributes="bold" textcolor="white"></label>
+            <label x:name="info"
+                   textcolor="white" fontattributes="bold" />
+            <label x:name="info1"
+                   textcolor="white" fontattributes="bold"/>
+            <label x:name="info2"
+                   textcolor="white" fontattributes="bold"/>
+            <label x:name="info3"
+                   textcolor="white" fontattributes="bold"/>
+            <label x:name="info4"
+                   textcolor="white" fontattributes="bold"/>
+            <label x:name="info5"
+                   textcolor="white" fontattributes="bold"/>
+            </stacklayout>
+        </grid>
+    </relativelayout>-->
+</ContentPage>
