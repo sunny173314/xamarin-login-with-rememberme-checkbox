@@ -21,6 +21,7 @@ namespace RememberMe.MasterInfo
                 Remember.ClearEverything();
                 Application.Current.MainPage = new NavigationPage(new MainPage());
                 Application.Current.Properties["IsLoggedIn"] = false;
+                
             }
             else
             {

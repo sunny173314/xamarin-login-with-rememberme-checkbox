@@ -19,7 +19,7 @@ namespace RememberMe.MasterInfo
             // Adding menu items to menuList and you can define title ,page and icon
             menuList.Add(new MasterPageItem() { Title = "Home", Icon = "iconhome.png", TargetType = typeof(MasterInfo.Wellcome) });
             menuList.Add(new MasterPageItem() { Title = "Device Info", Icon = "device.png", TargetType = typeof(MasterInfo.DeviceInformation) });
-            // menuList.Add(new MasterPageItem() { Title = "Help", Icon = "help.png", TargetType = typeof(HelpPage) });
+            menuList.Add(new MasterPageItem() { Title = "PDF", Icon = "help.png", TargetType = typeof(MasterInfo.PdfView) });
             //menuList.Add(new MasterPageItem() { Title = "LogOut", Icon = "logout.png", TargetType = typeof(LogoutPage) });
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
